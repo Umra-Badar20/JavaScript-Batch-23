@@ -26,13 +26,21 @@
 // 5 Umra 
 
 for(var i=1; i<=5; i++){
-    for(var j=1; j<=4*i; j++){
+    for(var k=1;k<=5-i; k++){
+        document.write("&nbsp;&nbsp;")
+    }
+    for(var j=1; j<=i; j++){
+        document.write("*")
+    }
+    for(var l=2; l<=i; l++){
         document.write("*")
     }
     document.write("<br>")
 
 }
-// *
-// **
-// ***
-// ****
+
+
+//     *
+//    **
+//   ***
+//  ****
