@@ -35,9 +35,9 @@
 // console.log(hours+ ampm);
 
 
-var randomDate = new Date("1/4/2026 1:38:00")
-var today = new Date()
-var diff = Math.floor((today - randomDate)/1000)
+var postTime = new Date("1/4/2026 1:38:00")
+var now = new Date()
+var diff = Math.floor((now - postTime)/1000)
 
 console.log(diff);
 if(diff < 60){
