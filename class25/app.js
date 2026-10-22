@@ -27,11 +27,10 @@ function returnFunc(event){
 
 function dance(e){
     console.log(e.src);
-    e.src="images/cat.gif"
+    e.src="images/cat.gif";
     e.style.width ="436px"
     e.style.height ="413px"
     e.style.borderRadius= "10px"
-
 }
 function stop(e){
  e.src="./images/cat.png"
