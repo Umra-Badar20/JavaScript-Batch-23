@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #editFormContainer{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Add New Student</h2>
+    <form id="addStudentForm" onsubmit="addStudent(event)">
+        <label>Name:</label>
+        <input type="text" id="studentName" required>
+        <label>Age:</label>
+        <input type="number" id="studentAge" required>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <h2>Student Records</h2>
+    <table width="600" border="2">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="studentTableBody">
+           
+        </tbody>
+    </table>
+
+    <div id="editFormContainer">
+        <h2>Edit Student Details</h2>
+        <form id="editStudentForm" onsubmit="saveChanges(event)">
+            <label>Name:</label>
+            <input type="text" id="editName" required>
+            <label>Age:</label>
+            <input type="number" id="editAge" required>
+            <button type="submit">Save Changes</button>
+            <button type="button" onclick="closeEditForm()">Cancel</button>
+        </form>
+    </div>
+
+
+   <script src="app.js"></script>
+</body>
+</html>
