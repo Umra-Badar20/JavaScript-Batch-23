@@ -1,0 +1,20 @@
+body{
+    background-color: rgba(151, 12, 40, 0.981);
+}
+.swal2-popup{
+    background-color: bisque;
+}
+.swal2-confirm{
+    background-color: rgba(151, 12, 40, 0.981);
+}
+.swal2-confirm:hover{
+    background-color: rgba(151, 12, 40, 0.663);
+}
+
+.hideImg{
+    height: 200px;
+}
+img{
+    height: 500px;
+    width: 800px;
+}
