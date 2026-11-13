@@ -17,7 +17,23 @@
 //     p2.setAttribute("class","unique")
 // }
 
-var p = document.createElement("p")
-var text = document.createTextNode("This is a para")
-p.appendChild(text)
-document.body.appendChild(p)
+// var p = document.createElement("p")
+// var text = document.createTextNode("This is a para")
+// p.appendChild(text)
+// document.body.appendChild(p)
+
+// var h2= document.createElement("h2")
+// var text = document.createTextNode("Hello World")
+// h2.appendChild(text)
+
+// var img = document.createElement("img")
+// img.setAttribute("src","https://hips.hearstapps.com/hmg-prod/images/gettyimages-2165950545-69600af8c9b0d.jpg?crop=0.670xw:1.00xh;0.134xw,0&resize=1120:*")
+// img.setAttribute("height","400")
+// // document.body.appendChild(img)
+// // document.body.appendChild(h2)
+// var main = document.getElementById("main")
+// main.appendChild(h2)
+// main.appendChild(img)
+
+var main = document.getElementById("main")
+main.innerHTML= `<img height="400" src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-2165950545-69600af8c9b0d.jpg?crop=0.670xw:1.00xh;0.134xw,0&resize=1120:*" alt="">`
