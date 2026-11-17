@@ -1,0 +1,18 @@
+.bgColor, .swal2-confirm{
+    background-color: #00796b;
+
+}
+.postBtn:hover, #editBtn:hover, .swal2-confirm:hover{
+        background-color: #00685c;
+
+}
+body{
+    background-color:#00685c50 ;
+}
+.card{
+    background-color: #02ac9853;
+}
+.swal2-popup{
+    background-color: #9bd1cbfd;
+
+}
