@@ -3,6 +3,17 @@ function deletePost() {
     card.remove()
 
 }
+function editPost(){
+    var card = event.target.parentNode.parentNode
+    var title = card.children[1].children[0].children[0].children[0].innerText
+    var desc = card.children[1].children[0].children[1].children[0].innerText
+    document.getElementById("title").value = title
+    document.getElementById("desc").value = desc
+    card.remove()
+    
+    
+
+}
 function post() {
     console.log("post");
     var title = document.getElementById("title")
@@ -26,7 +37,7 @@ function post() {
                         
                     </div>
                     <div class="ms-auto m-2">
-                        <button class="btn bgColor text-light px-4" id="editBtn">Edit</button>
+                        <button class="btn bgColor text-light px-4" id="editBtn" onclick="editPost()">Edit</button>
                         <button class="btn btn-danger" onclick="deletePost()">Delete</button>
                     </div>
                 </div>
@@ -40,4 +51,9 @@ function post() {
     }
     title.value = ""
     desc.value = ""
+}
+
+function selectImg(src){
+    console.log(src);
+    
 }

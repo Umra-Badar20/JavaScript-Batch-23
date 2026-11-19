@@ -16,3 +16,16 @@ body{
     background-color: #9bd1cbfd;
 
 }
+.bgImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+.bgImg:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 2s;
+}
+.selected{
+    border: 2px solid #00685c;
+}
