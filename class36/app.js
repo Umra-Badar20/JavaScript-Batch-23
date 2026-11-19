@@ -1,17 +1,18 @@
+var cardBg
 function deletePost() {
     var card = event.target.parentNode.parentNode
     card.remove()
 
 }
-function editPost(){
+function editPost() {
     var card = event.target.parentNode.parentNode
     var title = card.children[1].children[0].children[0].children[0].innerText
     var desc = card.children[1].children[0].children[1].children[0].innerText
     document.getElementById("title").value = title
     document.getElementById("desc").value = desc
     card.remove()
-    
-    
+
+
 
 }
 function post() {
@@ -25,7 +26,7 @@ function post() {
                     <div class="card-header bgColor text-light">
                         @blog
                     </div>
-                    <div class="card-body">
+                    <div style="background-image:url(${cardBg})" class="card-body">
                         <figure>
                             <blockquote class="blockquote">
                                 <p>${title.value}</p>
@@ -53,7 +54,16 @@ function post() {
     desc.value = ""
 }
 
-function selectImg(src){
-    console.log(src);
-    
+function selectImg(src) {
+    cardBg = src
+    console.log(cardBg);
+
+    var bgImg = document.getElementsByClassName("bgImg")
+    for (var i = 0; i < bgImg.length; i++) {
+        bgImg[i].className = "bgImg"
+    }
+    // event.target.className +=" selected"
+    event.target.classList.add("selected")
+
+
 }
