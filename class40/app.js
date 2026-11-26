@@ -1,30 +1,86 @@
-var quiz=[
-    {
-        question:"Q1: How to add elements in array from last?",
-        opt1: "push()",
-        opt2: "pop()",
-        opt3: "shift()",
-        opt4: "unshift()",
-        ans: "push()",
-    },
-    {
-        question:"Q2: What is the full form of DOM?",
-        opt1: "Document Oriented model",
-        opt2: "Document Oriented mode",
-        opt3: "Document Object mode",
-        opt4: "Document Object model",
-        ans: "Document Object model",
-      
-    },
-    {
-        question:"Q3: How to add elements in array from start?",
-        opt1: "push()",
-        opt2: "pop()",
-        opt3: "shift()",
-        opt4: "unshift()",
-        ans: "unshift()",
-    },
-]
+var quiz = [
+  {
+    question: "Q1: How to add elements in array from last?",
+    opt1: "push()",
+    opt2: "pop()",
+    opt3: "shift()",
+    opt4: "unshift()",
+    ans: "push()",
+  },
+  {
+    question: "Q2: What is the full form of DOM?",
+    opt1: "Document Oriented model",
+    opt2: "Document Oriented mode",
+    opt3: "Document Object mode",
+    opt4: "Document Object model",
+    ans: "Document Object model",
+  },
+  {
+    question: "Q3: How to add elements in array from start?",
+    opt1: "push()",
+    opt2: "pop()",
+    opt3: "shift()",
+    opt4: "unshift()",
+    ans: "unshift()",
+  },
+  {
+    question: "Q4: How to remove the last element from an array?",
+    opt1: "push()",
+    opt2: "pop()",
+    opt3: "shift()",
+    opt4: "slice()",
+    ans: "pop()",
+  },
+  {
+    question: "Q5: Which keyword is used to declare a constant variable in JavaScript?",
+    opt1: "var",
+    opt2: "let",
+    opt3: "const",
+    opt4: "static",
+    ans: "const",
+  },
+  {
+    question: "Q6: Which operator checks both value and data type?",
+    opt1: "=",
+    opt2: "==",
+    opt3: "===",
+    opt4: "!=",
+    ans: "===",
+  },
+  {
+    question: "Q7: How do you select an HTML element by its ID using DOM?",
+    opt1: "getElementByClass()",
+    opt2: "querySelectorAll()",
+    opt3: "getElementById()",
+    opt4: "getElementsByName()",
+    ans: "getElementById()",
+  },
+  {
+    question: "Q8: What will typeof [] return in JavaScript?",
+    opt1: "array",
+    opt2: "object",
+    opt3: "list",
+    opt4: "undefined",
+    ans: "object",
+  },
+  {
+    question: "Q9: Which method converts a JSON string into a JavaScript object?",
+    opt1: "JSON.stringify()",
+    opt2: "JSON.parse()",
+    opt3: "JSON.convert()",
+    opt4: "JSON.object()",
+    ans: "JSON.parse()",
+  },
+  {
+    question: "Q10: How do you remove the first element from an array?",
+    opt1: "pop()",
+    opt2: "unshift()",
+    opt3: "splice()",
+    opt4: "shift()",
+    ans: "shift()",
+  },
+];
+
 
 var index=0
 var score =0
